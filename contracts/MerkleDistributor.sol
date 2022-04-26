@@ -9,7 +9,7 @@ contract MerkleDistributor {
     FreshToken public token;
     bytes32 public merkleRoot;
 
-    mapping(address => bool) private isClaimed;
+    mapping(address => bool) public isClaimed;
 
     constructor(FreshToken _token, bytes32 _merkleRoot) {
         admin = msg.sender;
@@ -17,9 +17,15 @@ contract MerkleDistributor {
         merkleRoot = _merkleRoot;
     }
 
-    function claimAirDrop(address _claimer, bytes32[] calldata _merkleProof) external {
-        require(msg.sender == admin || msg.sender == admin, "Only claimer or admin can call");
+    function claimAirDrop(address _claimer, bytes32[] calldata _merkleProof)
+        external
+    {
+        require(
+            msg.sender == admin || msg.sender == admin,
+            "Only claimer or admin can call"
+        );
         require(!isClaimed[_claimer], "already claimed");
+        require(canClaim(_claimer, _merkleProof), "Not able to claim");
         require(
             MerkleProof.verify(
                 _merkleProof,

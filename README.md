@@ -47,3 +47,4 @@ We can also check if user is able to claim airdrop or not by calling `canClaim(a
 
 By calling this function we get boolean value in return and we can know that if user is able to claim air drop or not.
 
+
