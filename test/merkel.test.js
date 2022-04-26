@@ -66,11 +66,11 @@ describe("Merkle Air Drop", function () {
       const approveToken = await token.approve(contract.address, ethers.BigNumber.from("1000000000000000000000000000"))
       await approveToken.wait()
   
-      // const checkForClaim = await contract.claimAirDrop(hexProof);
-      // await checkForClaim.wait();
+      const checkForClaim = await contract.claimAirDrop(user.address, hexProof);
+      await checkForClaim.wait();
 
-      // const userBalance = await token.balanceOf(admin);
-      // expect(userBalance).to.equal(ethers.BigNumber.from("10000000000000000000000"));
+      const userBalance = await token.balanceOf(user.address);
+      expect(userBalance).to.equal(ethers.BigNumber.from("10000000000000000000000"));
     })
   })
 
