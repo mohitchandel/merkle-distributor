@@ -30,12 +30,12 @@ describe("Merkle Air Drop", function () {
     hexProof = merkleTree.getHexProof(claimingAddress);
     hexRoot = "0x" + merkleTree.getRoot().toString('hex');
 
-    // Deploying flayer token 
+    // Deploying fresh token 
     const FreshToken = await ethers.getContractFactory("FreshToken");
     token = await FreshToken.deploy();
     await token.deployed();
 
-    // deploying staking contract
+    // deploying merkle contract
     const MerkleDistributor = await ethers.getContractFactory("MerkleDistributor");
     contract = await MerkleDistributor.deploy(token.address, hexRoot);
     await contract.deployed();

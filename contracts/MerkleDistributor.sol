@@ -21,7 +21,7 @@ contract MerkleDistributor {
         external
     {
         require(
-            msg.sender == admin || msg.sender == admin,
+            msg.sender == admin || msg.sender == _claimer,
             "Only claimer or admin can call"
         );
         require(!isClaimed[_claimer], "already claimed");
