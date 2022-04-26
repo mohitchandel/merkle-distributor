@@ -2,7 +2,7 @@
 
 This Project is deployed on the Rinkeby testnet
 
-Merkle Smart contract address: [0xdCa6a69C65a890BC957c51c801bcA9f0c3Cd8A72](https://rinkeby.etherscan.io/address/0xdCa6a69C65a890BC957c51c801bcA9f0c3Cd8A72)
+Merkle Smart contract address: [0xE85aC8Cc4758336e5C33BeFBfd05fdAFd32E9B7c](https://rinkeby.etherscan.io/address/0xE85aC8Cc4758336e5C33BeFBfd05fdAFd32E9B7c)
 
 ERC20 Token (Fresh Token) address: [0x742eFa778858bD02c43E47F8d6D8dB3b3B1F4aea](https://rinkeby.etherscan.io/address/0x742eFa778858bD02c43E47F8d6D8dB3b3B1F4aea)
 
@@ -37,7 +37,7 @@ this function has following arguments:
 
 First the merkle proof will be verified and if merkle proof is correct then the token will be recieved
 
-e.g. Tranx hash -> https://rinkeby.etherscan.io/tx/0xd5befda8bf6bd00d604c3e55fb57f3275fbc8b6811ef08902de442934b7814c0
+e.g. Tranx hash -> https://rinkeby.etherscan.io/tx/0x13633d36166c7634a7a6a9b54a32f0d80207ebe4fbe30b7f9532319efb629f66
 
 
 We can also check if user is able to claim airdrop or not by calling `canClaim(address _address, bytes32[] calldata merkleProof)` function which has two parameters
