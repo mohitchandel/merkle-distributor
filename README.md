@@ -2,7 +2,7 @@
 
 This Project is deployed on the Rinkeby testnet
 
-Merkle Smart contract address: [0x6e3D6afB3D78C72eaA365cFA74e343393053315D](https://rinkeby.etherscan.io/address/0x6e3D6afB3D78C72eaA365cFA74e343393053315D)
+Merkle Smart contract address: [0xdCa6a69C65a890BC957c51c801bcA9f0c3Cd8A72](https://rinkeby.etherscan.io/address/0xdCa6a69C65a890BC957c51c801bcA9f0c3Cd8A72)
 
 ERC20 Token (Fresh Token) address: [0x742eFa778858bD02c43E47F8d6D8dB3b3B1F4aea](https://rinkeby.etherscan.io/address/0x742eFa778858bD02c43E47F8d6D8dB3b3B1F4aea)
 
