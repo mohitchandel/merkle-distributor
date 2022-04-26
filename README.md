@@ -35,6 +35,10 @@ this function has following arguments:
 
 - `bytes32[] calldata _merkleProof` : It array of proof of merkle tree transactions.
 
+First the merkle proof will be verified and if merkle proof is correct then the token will be recieved
+
+e.g. Tranx hash -> https://rinkeby.etherscan.io/tx/0xd5befda8bf6bd00d604c3e55fb57f3275fbc8b6811ef08902de442934b7814c0
+
 
 We can also check if user is able to claim airdrop or not by calling `canClaim(address _address, bytes32[] calldata merkleProof)` function which has two parameters
 
